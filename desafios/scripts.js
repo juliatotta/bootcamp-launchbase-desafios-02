@@ -16,4 +16,5 @@ document.querySelector('.maximize-modal').addEventListener("click", function(){
 
 document.querySelector('.close-modal').addEventListener("click", function(){
     modalOverlay.classList.remove("active")
+    modal.classList.remove("active")
 })
