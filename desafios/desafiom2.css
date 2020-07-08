@@ -70,3 +70,122 @@ header {
     padding: 0;
     border-bottom: 1px solid #D3AC2B;
 }
+
+/* CARDS */
+
+.cards {
+    max-width:900px;
+    margin: 0 auto;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-logo {
+    margin: 50px auto;
+}
+
+.card-title {
+    margin: 30px auto;
+    line-height: 30px;
+}
+
+.card-content {
+    padding: 30px;
+}
+
+.card-price {
+    background-color: #cbd0d846;
+    border-radius: 8px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#starter .card-title strong,
+#starter .card-content strong {
+    color: rgb(113, 89, 193);
+}
+
+#launchbase .card-title strong,
+#launchbase .card-content strong {
+    color: rgb(253, 149, 31);
+}
+
+#gostack .card-title strong,
+#gostack .card-content strong {
+    color: rgb(4, 211, 97);
+}
+
+.card-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* MODAL */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+    background-color:white;
+}
+
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal .maximize-modal {
+    color: black;
+    position: absolute;
+    right: 40px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal.active {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0; 
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 5vh;
+}
