@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    width: 1400px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* MENU */
+
+.menu {
+    display: flex;
+    align-items: center;
+    
+}
+.logo img {
+    margin: 36.1px 122.4px 30px 231px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #111111;
+    margin: 38px 30px 36px 0px;
+    font-size: 16px;
+}
+
+/* MAIN */
+
+.main {
+    display: relative;
+    margin: 0px 230px;
+    position: relative;
+    width: 940px;
+    height: 366px;
+    background-color: #FBDFDB;
+    border-radius: 30px;
+}
+
+.main-content h1 {
+    position: absolute;
+    margin: 117px 575px 211px 60px;
+    font-size: 32px;  
+    color: #111111;
+}
+
+.main-content p {
+    position: absolute;
+    margin: 165px 564px 117px 60px;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.7;
+    color: #000000;
+}
+
+.main-content img {
+    width: 216px;
+    height: 300px;
+    margin-left: 624px;
+    margin-top: 66px;
+}
+
+/* WRAPPER*/
+
+.wrapper {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 50px 450px 20px 230px;
+    color: #111111;
+}
+
+.title-wrapper {
+    font-size: 20px;
+    color: #111111;
+    margin-top: 30px;
+    margin-left: 230px;
+    margin-bottom: 20px;
+}
+
+
+/* TEXT */
+
+.text {
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    margin-left: 230px;
+    margin-right: 230px;
+    
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 0 230px;   
+}
+ 
+.card-logo {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: normal;
+    color: #111111;
+    margin-top: 20px;
+} 
+
+.card-text {
+    font-size: 14px;
+    color: #777777;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 50px;
+    height: 62px;
+    background-color: #EEEEEE;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    padding: 23px;
+}
+
+
+/* MODAL */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    width: 660px;
+    height: 413px;
+    background-color: #FFFFFF;
+    margin: 355px 370px;
+    position: relative;
+    border-radius: 16px; 
+    text-align: center;
+}
+
+.modal-close {
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    right: 281px;
+}
+
+.card-modal {
+    width: 600px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 30px;
+
+}
+
+.modal-title {
+    font-size: 24px;
+    color: #111111;
+    font-weight: normal;
+}
+
+.modal-text {
+    font-size: 18px;
+    color: #777777;
+    font-weight: normal;
+}
+
+.modal-close {
+    font-size: 16px;
+    color: #999999;
+}
+/* MODAL ACTIVE */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
